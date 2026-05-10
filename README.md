@@ -25,10 +25,11 @@
 
 在 VS Code 的 GitHub Copilot Chat 中直接使用 **DeepSeek V4 Flash** 和 **DeepSeek V4 Pro**，通过官方 [DeepSeek API](https://api-docs.deepseek.com/) 驱动。
 
-| 模型 | 上下文长度 | 思考模式 | 适合场景 |
-|---|---|---|---|
-| `deepseek-v4-flash` | 1M tokens | ✗ | 日常快速任务，响应更快 |
-| `deepseek-v4-pro` | 1M tokens | ✓ | 复杂推理、大型代码库 |
+
+| 模型                | 上下文长度 | 思考模式 | 适合场景               |
+| ------------------- | ---------- | -------- | ---------------------- |
+| `deepseek-v4-flash` | 1M tokens  | ✗       | 日常快速任务，响应更快 |
+| `deepseek-v3.2`     | 1M tokens  | ✓       | 复杂推理、大型代码库   |
 
 ### 使用前准备
 
@@ -80,10 +81,11 @@ code --install-extension /path/to/deepseek-copilot.vsix
 
 Use **DeepSeek V4 Flash** and **DeepSeek V4 Pro** directly inside VS Code's GitHub Copilot Chat, powered by the official [DeepSeek API](https://api-docs.deepseek.com/).
 
-| Model | Context | Thinking Mode | Best For |
-|---|---|---|---|
-| `deepseek-v4-flash` | 1M tokens | ✗ | Fast everyday tasks |
-| `deepseek-v4-pro` | 1M tokens | ✓ | Complex reasoning, large codebases |
+
+| Model               | Context   | Thinking Mode | Best For                           |
+| ------------------- | --------- | ------------- | ---------------------------------- |
+| `deepseek-v4-flash` | 1M tokens | ✗            | Fast everyday tasks                |
+| `deepseek-v3.2`     | 1M tokens | ✓            | Complex reasoning, large codebases |
 
 ### Prerequisites
 
