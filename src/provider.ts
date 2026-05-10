@@ -14,7 +14,7 @@ import type { HFModelItem } from "./types";
 import { convertTools, convertMessages, tryParseJSONObject, validateRequest } from "./utils";
 import { ReasoningCache, fingerprintAssistantTurn, type CachedTurn } from "./reasoning_cache";
 
-const BASE_URL = "https://api.deepseek.com/v1";
+const BASE_URL = "https://api.siliconflow.cn/v1";
 const DEFAULT_MAX_OUTPUT_TOKENS = 8000;
 const DEFAULT_CONTEXT_LENGTH = 1048576; // 1M context window
 const DEEPSEEK_SECRET_KEY = "deepseek.apiKey";
@@ -26,13 +26,13 @@ const REASONING_CACHE_STATE_KEY = "deepseek.reasoningCache";
 /** DeepSeek models exposed to VS Code. */
 const DEEPSEEK_MODELS: import("./types").HFModelItem[] = [
 	{
-		id: "deepseek-v4-flash",
+		id: "deepseek-ai/DeepSeek-V4-Flash",
 		object: "model",
 		created: 0,
 		owned_by: "deepseek-ai",
 		providers: [
 			{
-				provider: "deepseek",
+				provider: "siliconflow",
 				status: "live",
 				supports_tools: true,
 				supports_structured_output: false,
@@ -45,13 +45,13 @@ const DEEPSEEK_MODELS: import("./types").HFModelItem[] = [
 		},
 	},
 	{
-		id: "deepseek-v4-pro",
+		id: "deepseek-ai/DeepSeek-V3.2",
 		object: "model",
 		created: 0,
 		owned_by: "deepseek-ai",
 		providers: [
 			{
-				provider: "deepseek",
+				provider: "siliconflow",
 				status: "live",
 				supports_tools: true,
 				supports_structured_output: false,
@@ -180,8 +180,8 @@ export class HuggingFaceChatModelProvider implements LanguageModelChatProvider {
 		const maxOutput = DEFAULT_MAX_OUTPUT_TOKENS;
 
 		const MODEL_NAMES: Record<string, string> = {
-			"deepseek-v4-flash": "DeepSeek V4 Flash",
-			"deepseek-v4-pro": "DeepSeek V4 Pro",
+			"DeepSeek-v4-flash": "deepseek-ai/DeepSeek-V4-Flash",
+			"DeepSeek-v3.2": "deepseek-ai/DeepSeek-V3.2",
 		};
 
 		const infos: LanguageModelChatInformation[] = DEEPSEEK_MODELS.map((m) => {
@@ -284,7 +284,7 @@ export class HuggingFaceChatModelProvider implements LanguageModelChatProvider {
 
 			// Re-inject cached reasoning_content for Pro (thinking mode) so
 			// DeepSeek does not 400 on multi-turn conversations.
-			const supportsThinking = model.id === "deepseek-v4-pro";
+			const supportsThinking = model.id === "DeepSeek-v3.2";
 			if (supportsThinking) {
 				this.attachReasoningToHistory(openaiMessages);
 			}

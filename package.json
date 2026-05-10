@@ -2,7 +2,7 @@
 	"name": "deepseek-copilot",
 	"publisher": "ChenyuHeee",
 	"displayName": "DeepSeek for GitHub Copilot Chat",
-	"description": "Integrates DeepSeek V4 Flash and V4 Pro into GitHub Copilot Chat",
+	"description": "Integrates DeepSeek V4 Flash and V3.2  into GitHub Copilot Chat",
 	"icon": "assets/logo.png",
 	"repository": {
 		"type": "git",
@@ -35,7 +35,7 @@
 		"commands": [
 			{
 				"command": "huggingface.manage",
-				"title": "Manage DeepSeek V4 Pro Provider"
+				"title": "Manage DeepSeek V3.2 Provider"
 			}
 		]
 	},
