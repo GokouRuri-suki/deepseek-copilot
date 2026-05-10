@@ -23,21 +23,21 @@
 
 ## 说明
 
-### 前言
+#### 前言
 
 - 此仓库改自GitHub的[ChenyuHeee/deepseek-copilot: DeepSeek V4 provider for GitHub Copilot Chat](https://github.com/ChenyuHeee/deepseek-copilot)
 - 使用上您需要在您需要填入key的时候填入`siliconflow的key`就可以了
 
-### 目的：
+#### 目的：
 
 - 为了将 provider 从`deepseek`改为`siliconflow`，因为我siliconflow上还有100的余额,deepseek只有10块了( :
 
-### 修改简要
+#### 修改简要
 
 - 修改默认的厂商为`siliconflow `并且将原来的deepseek模型`v4-flash`和`v4-pro`改为了 `v4-flash`和`v3.2`
 - 下面的markdown说明也是原作者[ChenyuHeee (He Chenyu)](https://github.com/ChenyuHeee)写的我只做了尽可能少的改动
 
-### 题外话
+#### 题外话
 
 - 我默认用的是`非pro模型`(siliconflow不能使用免费额度),这意味这你就算只有免费额度也可以使用，但是可能无法支持高强度使用(免费额度会限速）,但这经济实惠的选择，如果你只是利用这个学习做点小项目我很推荐使用siliconflow
 - 再次感谢原作者开源，如果您喜欢此项目那么请你为[ChenyuHeee (He Chenyu)](https://github.com/ChenyuHeee)的[ChenyuHeee/deepseek-copilot](https://github.com/ChenyuHeee/deepseek-copilot)点一个star（：
