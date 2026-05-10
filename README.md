@@ -1,14 +1,14 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/ChenyuHeee/deepseek-copilot/main/assets/logo-header.png" alt="DeepSeek Logo" width="60%" />
+  <img src="https://www.siliconflow.cn/" alt="siliconflow Logo" width="60%" />
 </div>
 
 <br/>
 
 <div align="center">
 
-# DeepSeek for GitHub Copilot Chat
+# siliconflow DeepSeek for GitHub Copilot Chat
 
-在 VS Code 的 GitHub Copilot Chat 中直接使用 DeepSeek 最新模型
+在 VS Code 的 GitHub Copilot Chat 中直接使用 siliconflow 的DeepSeek 模型
 
 [![GitHub Release](https://img.shields.io/github/v/release/ChenyuHeee/deepseek-copilot)](https://github.com/ChenyuHeee/deepseek-copilot/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -21,9 +21,30 @@
 
 <a name="中文"></a>
 
+## 说明
+
+### 前言
+
+- 此仓库改自GitHub的[ChenyuHeee/deepseek-copilot: DeepSeek V4 provider for GitHub Copilot Chat](https://github.com/ChenyuHeee/deepseek-copilot)
+- 使用上您需要在您需要填入key的时候填入`siliconflow的key`就可以了
+
+### 目的：
+
+- 为了将 provider 从`deepseek`改为`siliconflow`，因为我siliconflow上还有100的余额,deepseek只有10块了( :
+
+### 修改简要
+
+- 修改默认的厂商为`siliconflow `并且将原来的deepseek模型`v4-flash`和`v4-pro`改为了 `v4-flash`和`v3.2`
+- 下面的markdown说明也是原作者[ChenyuHeee (He Chenyu)](https://github.com/ChenyuHeee)写的我只做了尽可能少的改动
+
+### 题外话
+
+- 我默认用的是`非pro模型`(siliconflow不能使用免费额度),这意味这你就算只有免费额度也可以使用，但是可能无法支持高强度使用(免费额度会限速）,但这经济实惠的选择，如果你只是利用这个学习做点小项目我很推荐使用siliconflow
+- 再次感谢原作者开源，如果您喜欢此项目那么请你为[ChenyuHeee (He Chenyu)](https://github.com/ChenyuHeee)的[ChenyuHeee/deepseek-copilot](https://github.com/ChenyuHeee/deepseek-copilot)点一个star（：
+
 ## 中文
 
-在 VS Code 的 GitHub Copilot Chat 中直接使用 **DeepSeek V4 Flash** 和 **DeepSeek V4 Pro**，通过官方 [DeepSeek API](https://api-docs.deepseek.com/) 驱动。
+在 VS Code 的 GitHub Copilot Chat 中直接使用 **DeepSeek V4 Flash** 和 **DeepSeek V3.2**，通过官方 [siliconflow](https://www.siliconflow.cn/) 驱动。
 
 
 | 模型                | 上下文长度 | 思考模式 | 适合场景               |
@@ -64,7 +85,7 @@ code --install-extension /path/to/deepseek-copilot.vsix
 
 1. 按 `Ctrl+Shift+P`（Windows/Linux）或 `Cmd+Shift+P`（macOS）打开命令面板
 2. 输入 **Manage DeepSeek Provider** 并按回车
-3. 粘贴你的 [DeepSeek API Key](https://platform.deepseek.com/api_keys) 并按回车
+3. 粘贴你的[SiliconCloud-key](https://cloud.siliconflow.cn/me/account/ak)并按回车
 
 ### 第四步 — 选择模型，开始对话
 
@@ -79,7 +100,7 @@ code --install-extension /path/to/deepseek-copilot.vsix
 
 ## English
 
-Use **DeepSeek V4 Flash** and **DeepSeek V4 Pro** directly inside VS Code's GitHub Copilot Chat, powered by the official [DeepSeek API](https://api-docs.deepseek.com/).
+Use **DeepSeek V4 Flash** and **DeepSeek V4 Pro** directly inside VS Code's GitHub Copilot Chat, powered by the official [siliconflow](https://www.siliconflow.cn/).
 
 
 | Model               | Context   | Thinking Mode | Best For                           |
@@ -117,7 +138,7 @@ code --install-extension /path/to/deepseek-copilot.vsix
 
 1. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 2. Type **Manage DeepSeek Provider** and press Enter
-3. Paste your [DeepSeek API Key](https://platform.deepseek.com/api_keys) and press Enter
+3. Paste your [SiliconCloud-key](https://cloud.siliconflow.cn/me/account/ak) and press Enter
 
 ### Step 4 — Select a model and start chatting
 
