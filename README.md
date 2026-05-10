@@ -30,7 +30,7 @@
 
 #### 目的：
 
-- 为了将 provider 从`deepseek`改为`siliconflow`，因为我siliconflow上还有100的余额,deepseek只有10块了( :
+- 为了将 provider 从`deepseek`改为`siliconflow`，因为我siliconflow上还有100的余额,deepseek只有10块了 ):
 
 #### 修改简要
 
@@ -100,7 +100,28 @@ code --install-extension /path/to/deepseek-copilot.vsix
 
 ## English
 
-Use **DeepSeek V4 Flash** and **DeepSeek V4 Pro** directly inside VS Code's GitHub Copilot Chat, powered by the official [siliconflow](https://www.siliconflow.cn/).
+Use **DeepSeek V4 Flash** and **DeepSeek V3.2** directly inside VS Code's GitHub Copilot Chat, powered by the official [siliconflow](https://www.siliconflow.cn/).
+
+### Notes
+
+#### Preface
+
+- This repository is forked from [ChenyuHeee/deepseek-copilot: DeepSeek V4 provider for GitHub Copilot Chat](https://github.com/ChenyuHeee/deepseek-copilot) on GitHub.
+- When asked for an API key, just enter your **SiliconFlow API key**.
+
+#### Purpose
+
+- To switch the provider from `deepseek` to `siliconflow` — I still have ¥100 balance on SiliconFlow, but only ¥10 left on DeepSeek ):
+
+#### Changes Summary
+
+- Changed the default provider to `siliconflow` and replaced the original DeepSeek models: `v4-flash` and `v4-pro` are now `v4-flash` and `v3.2`.
+- The markdown documentation below is from the original author [ChenyuHeee (He Chenyu)](https://github.com/ChenyuHeee) — I've made minimal changes.
+
+#### Side Notes
+
+- I use the **non-pro model** by default (SiliconFlow does not support free tier). This means you can use it even with just the free credits, though heavy usage may be rate-limited. It's an economical choice — if you're learning and working on small projects, I highly recommend SiliconFlow.
+- Thanks again to the original author for open-sourcing this project. If you like it, please give a star to [ChenyuHeee/deepseek-copilot](https://github.com/ChenyuHeee/deepseek-copilot) on GitHub! (:
 
 
 | Model               | Context   | Thinking Mode | Best For                           |
@@ -144,7 +165,7 @@ code --install-extension /path/to/deepseek-copilot.vsix
 
 1. Open Copilot Chat (`Ctrl+Alt+I` / `Cmd+Option+I`)
 2. Click the model selector at the top
-3. Choose **DeepSeek V4 Flash** or **DeepSeek V4 Pro**
+3. Choose **DeepSeek V4 Flash** or **DeepSeek V3.2**
 4. Start chatting!
 
 ### Development
